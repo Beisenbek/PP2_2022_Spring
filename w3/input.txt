@@ -1,10 +1,10 @@
 5
-akaza water
-zenitsu_brother thunder
-Susamaru water
-Spider_demon_father water
-Spider_demon_son sun
+Muzan sun
+Spider_Sister insect
+Gyokko fog
+Akaza flame
+Gyokko_2 fog
 3
-tanjiro water 10
-zenitsu thunder 1
-giyuu water 11
+Muichiro fog 1
+Rengoku flame 100000
+Shinobu insect 500
