@@ -1,6 +1,5 @@
 from os import scandir
 from select import select
-from xxlimited import foo
 import pygame
 
 BLACK = (0, 0, 0)
