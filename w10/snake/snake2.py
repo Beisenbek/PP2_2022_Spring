@@ -100,9 +100,11 @@ def main():
 
         SCREEN.fill(BLACK)
 
-        drawGrid()
+        
         snake.draw()
         food.draw()
+        
+        drawGrid()
 
         pygame.display.update()
         CLOCK.tick(5)
