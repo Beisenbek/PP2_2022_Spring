@@ -6,7 +6,6 @@ def main():
     screen = pygame.display.set_mode((640, 480))
 
     baseLayer = pygame.Surface((640, 480))
-    #tempLayer = pygame.Surface((640, 480), pygame.SRCALPHA)
 
     clock = pygame.time.Clock()
     
@@ -42,7 +41,6 @@ def main():
 
 
             if event.type == pygame.MOUSEMOTION:
-                # if mouse moved, add point to list
                 if isMouseDown:
                     currentX =  event.pos[0]
                     currentY =  event.pos[1]
