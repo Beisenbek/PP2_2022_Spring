@@ -1,15 +1,13 @@
-import psycopg2
+from configparser import ConfigParser
 
-# Connect to your postgres DB
-conn = psycopg2.connect("dbname=postgres user=bsnbk password=password")
+parser = ConfigParser()
+parser.read('database.ini')
 
-# Open a cursor to perform database operations
-cur = conn.cursor()
-
-# Execute a query
-cur.execute("SELECT * FROM students")
-
-# Retrieve query results
-records = cur.fetchall()
-
-print(records)
+db = {}
+if parser.has_section('postrgresql'):
+    params = parser.items('postrgresql')
+    for param in params:
+        db[param[0]] = param[1]
+    print(db)
+else:
+    raise Exception('Section postrgresql not found!') 
