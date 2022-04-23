@@ -39,3 +39,4 @@ add_part('LTE Modem', (1, 5))
 
 
 add_part('Power Amplifier', (99,))
+
